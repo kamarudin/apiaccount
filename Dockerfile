@@ -1,7 +1,7 @@
 FROM php:7.3-cli
 
 # Set working directory
-#WORKDIR /app
+WORKDIR /app
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
