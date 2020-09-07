@@ -37,5 +37,4 @@ RUN composer install
 
 # Expose port 9000 and start php-fpm server
 EXPOSE 8000
-#CMD php artisan serve --host=0.0.0.0 --port=8000
-CMD php artisan serv
+CMD php artisan serve --host=0.0.0.0 --port=8000
