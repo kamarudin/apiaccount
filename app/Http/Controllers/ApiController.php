@@ -9,7 +9,7 @@ class ApiController extends Controller
 {
     public function getPing() {
       date_default_timezone_set("Asia/Kuala_Lumpur");
-      $ping = "Ping at @ " .date("d M Y") . "  " .date("H:i:s");
+      $ping = "Ping@ " .date("d M Y") . "  " .date("H:i:s");
       return response($ping, 200);
     }
     
