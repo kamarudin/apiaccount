@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('ping', 'ApiController@getPing');
 
 Route::get('accounts', 'ApiController@getAllAccounts');
 Route::get('accounts/{id}', 'ApiController@getAccount');
