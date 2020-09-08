@@ -8,7 +8,9 @@ use App\Account;
 class ApiController extends Controller
 {
     public function getPing() {
-      return response("Hello Ping!!", 200);
+      date_default_timezone_set("Asia/Kuala_Lumpur");
+      $ping = "Ping at @ " .date("d M Y") . "  " .date("H:i:s");
+      return response($ping, 200);
     }
     
     public function getAllAccounts() {
