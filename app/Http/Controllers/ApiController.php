@@ -7,6 +7,10 @@ use App\Account;
 
 class ApiController extends Controller
 {
+    public function getPing() {
+      return response("Hello Ping!!", 200);
+    }
+    
     public function getAllAccounts() {
       $accounts = Account::get()->toJson(JSON_PRETTY_PRINT);
       return response($accounts, 200);
